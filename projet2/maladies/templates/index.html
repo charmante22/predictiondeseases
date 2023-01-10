@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>My site</title>
+</head>
+<body>
+    
+ <h1>deases prediction</h1> 
+ {% if sexe == "Masculin" %}
+ <p>Bonjour Monsieur {{nom}} {{postnom}}</p>
+ {% elif sexe == "Feminin" %}
+ <p>Bonjour Mademoiselle {{nom}} {{postnom}}</p>
+ {% else %}
+ <p>Bonjour {{nom}} {{postnom}}</p>
+ {% endif %}  
+ <a href="maladie">quel est l'etat de votre parcelle?</a>
+ 
+</html>

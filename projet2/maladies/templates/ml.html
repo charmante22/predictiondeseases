@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang=>
+<head>
+    
+    <title>Deases prediction</title>
+</head>
+<body>
+ <h1>quelle est l'etat de votre parcelle?</h1>
+ <form action="/maladies/predict/" method="POST">
+ 
+ {% csrf_token %}
+ <label>toilettes</label>
+ <input type="radio"name="toilettes" value="1">oui</input>
+ <input type="radio" name="toilettes" value="2">non</input>
+ <br><br>
+ <label>mousticaire</label> 
+ <input type="radio" name="mousticaire" value="1">oui</input>
+ <input type="radio" name="mousticaire" value="2">non</input>
+<br><br>
+<label>douche</label>
+<input type="radio" name="douche" value="1">oui</input>
+<input type="radio" name="douche" value="2">non</input>
+<br><br>
+<label>poubelle</label>
+<input type="radio" name="poubelle" value="1">oui</input>
+<input type="radio" name="poubelle" value="2">non</input>
+<br><br>
+
+<label>genre</label> 
+<input type="radio" name="genre" value="1">oui</input>
+<input type="radio" name="genre" value="2">non</input>
+<br><br>
+<label>age</label> 
+<input type="radio" name="age" value="1">oui</input>
+<input type="radio" name="age" value="2">non</input>
+<br><br>
+ <input type="submit" value="Predire"/>
+</form> 
+</body>
+</html>
